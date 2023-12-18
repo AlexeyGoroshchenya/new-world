@@ -9,7 +9,7 @@
 background-color: white;
     /**/
 
-   
+   font-size: 24px;
 }
 
 
@@ -24,9 +24,9 @@ background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
     padding: 24px;
-    height: 78px;
+    height: 100px;
     
 }
 
@@ -42,13 +42,39 @@ background-color: white;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
+    transform: translateX(calc((100vw - var(--container))/2));
 }
+
+@media (max-width: 1360px) {
+    .header__menu{
+        transform: translateX(0);
+    }
+  }
 
 @media (max-width: 1023.98px) {
     .header__menu {
-        display: none;
+        transition-duration: var(--hover-duration);
+        opacity: 0;
+        visibility: visible;
+        transform: scale(0) translateY(-100%);
+        position: fixed;
+        
+        flex-direction: column;
+
+        width: fit-content;
+        height: fit-content;
+        min-width: 60vw;
+        padding: 40px;
+        background-color: white;
+        border: 1px solid #7C58D3;
     }
+
+    .header__menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1) translateY(100%);
+    }
+
 }
 
 
@@ -58,7 +84,7 @@ background-color: white;
 
 .menu-header__list{
     display: flex;
-    gap: 36px;
+    gap: 25px;
     
     align-items: center;
 }
@@ -67,6 +93,15 @@ background-color: white;
 @media (max-width: 1200px) {
     .menu-header__list {
         gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .menu-header__list {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -84,7 +119,14 @@ background-color: white;
     display: flex;
     align-items: center;
     gap: 20px;
+    transform: translateX(calc((100vw - var(--container))/2));
 }
+
+@media (max-width: 1360px) {
+    .header__buttons{
+        transform: translateX(0);
+    }
+  }
 
 
 .header__donate {
@@ -101,7 +143,14 @@ background-color: white;
     justify-content: center;
     text-transform: uppercase;
     background-color: rgba(240, 248, 255, 0.658);
+    cursor: pointer;
 }
+
+@media (max-width: 1150px) {
+    .header__donate {
+        padding: 10px 20px;
+    }
+  }
 
 .header__button {
 display: none;

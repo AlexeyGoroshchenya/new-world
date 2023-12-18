@@ -118,7 +118,17 @@ body {
   font-family: 'Proxima Nova';
 color: #000000;
 
+--hover-duration:0.5s;
+--hover: scale(1.05);
 
+}
+
+.hover{
+  transition-duration: var(--hover-duration);
+}
+
+.hover:hover{
+  transform: var(--hover);
 }
 
 .body__wrapper {
@@ -146,13 +156,13 @@ color: #000000;
 
 @media (max-width: 1150px) {
   [class *="__container"] {
-    --container: 900px;
+    max-width: none;
   }
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 1023.98px) {
   [class *="__container"] {
-    --container: 750px;
+    --container: 900px;
   }
 }
 
@@ -160,7 +170,7 @@ color: #000000;
   [class *="__container"] {
     max-width: none;
   }
-}
+} */
 
 .title {
   font-size: calc(28px + (36 - 28)*((100vw - 320px)/(1950 - 320)));

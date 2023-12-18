@@ -1,12 +1,12 @@
 .footer {
     /* background-color: #333333; */
 
-
+padding-top: 30px;
 
 }
 
 .footer__image{
-    background-image: url('/dist/img/footer/footer-dogs.webp');
+    background-image: url('../img/footer/footer-dogs.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -135,7 +135,11 @@ padding-bottom: 20px;
     border-radius: 30px;
     margin-bottom: 50px;
     text-transform: uppercase;
+    cursor: pointer;
+    
 }
+
+
 .footer__socials {
     display: flex;
     align-items: center;
@@ -153,6 +157,10 @@ padding-bottom: 20px;
 display: flex;
 align-items: center;
 justify-content: center;
+cursor: pointer;
+}
+
+.footer__social-link:hover {
 
 }
 
@@ -173,6 +181,15 @@ justify-content: center;
 .footer__link {
     padding-bottom: 10px;
 }
+
+
+@media (max-width: 767.98px) {
+    .footer__link {
+        padding-bottom: 40px;
+    }
+  }
+
+
 .footer__disigned {
 
     background: #6646B4;
