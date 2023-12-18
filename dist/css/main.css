@@ -1,0 +1,72 @@
+.main {
+
+    flex: 1 1 auto;
+    padding-top: 150px;
+}
+
+
+
+@media (max-width: 767.98px) {
+    .cover__subtitle {
+
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+.get__title{
+    text-align: center;
+}
+
+.get__categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    padding-top: 50px;
+}
+.get__item {
+    flex: 1 1 45vw;
+    
+    text-align: center;
+}
+.item-get {
+}
+.item-get__image {
+    border-radius: 50%;
+    width: calc(var(--container)*0.45);
+height: calc(var(--container)*0.45);
+
+
+
+
+border: 20px dashed #FF5722;
+    background:
+    linear-gradient(to top, green, 10px, transparent 10px),
+    linear-gradient(to right, green, 10px, transparent 10px),
+    linear-gradient(to bottom, green, 10px, transparent 10px),
+    linear-gradient(to left, green, 10px, transparent 10px);
+    background-origin: border-box;
+
+
+/* border: solid 6px #fff;
+
+    outline: dashed 6px #888 #c5f006; */
+
+}
+
+.item-get__image_dog{
+    background: url('/dist/img/main/get/dog.jpg') center/ cover no-repeat;
+}
+
+.item-get__image_cat{
+    background: url('/dist/img/main/get/cat.jpg') center/ cover no-repeat;
+}
+
+.item-get__name {
+    padding: 70px 0;
+}
+.get__donation {
+}

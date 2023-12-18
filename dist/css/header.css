@@ -1,0 +1,130 @@
+.header {
+    
+    /* text-transform: uppercase; */
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+background-color: white;
+    /**/
+
+   
+}
+
+
+
+@media (max-width: 767.98px) {
+    .header {
+        
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 24px;
+    height: 78px;
+    
+}
+
+@media (max-width: 767.98px) {
+    .header__container {
+        /* flex-direction: column; */
+    }
+}
+
+.header__menu {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+@media (max-width: 1023.98px) {
+    .header__menu {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.menu-header__list{
+    display: flex;
+    gap: 36px;
+    
+    align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+    .menu-header__list {
+        gap: 20px;
+    }
+}
+
+/* @media (max-width: 1023.98px) {
+    .menu-header__list {
+        display: none;
+    }
+} */
+
+.menu-header__link a{
+    text-decoration: none;
+}
+
+.header__buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.header__donate {
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px; */
+    border: 1px solid #7C58D3;
+    border-radius: 20px;
+    padding: 10px 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: rgba(240, 248, 255, 0.658);
+}
+
+.header__button {
+display: none;
+}
+
+@media (max-width: 1023.98px) {
+    .header__button {
+     display: flex;   
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     flex-direction: column;
+     width: 60px;
+     height: 60px;
+     border: 1px solid #7C58D3;
+     border-radius: 20px;
+     padding: 5px;
+     background-color: rgba(240, 248, 255, 0.658);
+    }
+
+    .header__button span {
+        height: 2px;
+        width: 70%;
+        background-color: #7C58D3;
+    }
+}
