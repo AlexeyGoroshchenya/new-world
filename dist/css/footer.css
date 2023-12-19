@@ -10,8 +10,14 @@ padding-top: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 388px;
+    height: 500px;
 }
+
+@media (max-width: 1940px) {
+    .footer__image {
+        height: 388px;
+    }
+  }
 
 @media (max-width: 991.98px) {
     .footer__image {

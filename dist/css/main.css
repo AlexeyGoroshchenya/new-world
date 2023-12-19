@@ -310,6 +310,14 @@ display: flex;
 .pet {
     padding-bottom: 250px;
 }
+
+
+@media (max-width: 767.98px) {
+    .pet  {
+        padding-bottom: 70px;
+    }
+  }
+
 .pet__characteristics {
     display: flex;
     padding-bottom: 80px;
@@ -325,6 +333,7 @@ display: flex;
 
 .pet__image-box {
     margin-right: 130px;
+    flex: 0 0 50%;
 }
 
 @media (max-width: 767.98px) {
@@ -334,19 +343,29 @@ display: flex;
     }
   }
 
+ 
+
 .pet__image {
 
     width: calc(var(--container)*0.45);
     height: calc(var(--container)*0.45);
     border-radius: 50%;
     overflow: hidden;
-    display: flex;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
     align-items: center;
     justify-content: center;
     transform: rotate(-20deg);
     position: relative;
     background: url('../img/main/violet-round.svg') center/ cover no-repeat;
     margin-bottom: 50px;
+}
+
+.pet__image.active{
+    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 1150px) {
@@ -404,7 +423,7 @@ display: flex;
 }
 
 
-.active {
+.pet__pag-buttons.active {
     background-color: #FFDA47;
 }
 
@@ -424,7 +443,12 @@ display: flex;
 
 
 .pet__title {
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+
+
 .title {
 }
 .pet__tab {
@@ -503,6 +527,13 @@ display: flex;
 .slider {
     padding-bottom: 250px;
 }
+
+@media (max-width: 767.98px) {
+    .slider  {
+        padding-bottom: 70px;
+    }
+  }
+
 .slider__title {
     font-size: calc(28px + (60 - 28)*((100vw - 320px)/(1920 - 320)));
     text-transform: uppercase;
@@ -515,6 +546,12 @@ display: flex;
     text-align: center;
     padding-bottom: 120px;
 }
+
+@media (max-width: 767.98px) {
+    .slider__subtitle  {
+        padding-bottom: 70px;
+    }
+  }
 
 .slider__wrapper {
     padding-bottom: 60px;
@@ -556,6 +593,22 @@ display: flex;
     cursor: pointer;
 }
 
+@media (max-width: 991.98px) {
+    .card-slider__image  {
+        width: 45vw;
+        height: 45vw;
+    }
+  }
+
+
+@media (max-width: 767.98px) {
+    .card-slider__image  {
+        width: 60vw;
+        height: 60vw;
+    }
+  }
+
+
 .card-slider__title {
     text-align: center;
     font-size: 22px;
@@ -578,7 +631,31 @@ display: flex;
 }
 
 .slider__pagination {
+    padding: 0 20px 20px 20px;
+    
 }
+
+
+.slider__pagination .swiper-pagination-bullet{
+
+    height: 3px;
+    border-radius: 0;
+    min-width: 70px;
+
+}
+
+.slider__pagination .swiper-pagination-bullet-active{
+    background-color: #7C58D3;
+}
+
+
 .slider-button-next {
     transform: rotate(180deg);
 }
+
+@media (max-width: 991.98px) {
+    .slider-button-prev,
+    .slider-button-next  {
+        display: none;
+    }
+  }

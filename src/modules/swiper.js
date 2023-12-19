@@ -3,7 +3,12 @@ import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 
 
 
-export const swiper = new Swiper('.swiper', {
+export const swiper = ()=>{
+
+
+
+
+    const slider = new Swiper('.slider__body', {
     observer: true,
     observeParents: true,
     slidesPerView: 1,
@@ -15,13 +20,16 @@ export const swiper = new Swiper('.swiper', {
 
     modules: [Autoplay, Navigation, Pagination],
     autoplay: {
-        delay: 60000,
+        delay: 20000,
         disableOnInteraction: true,
         stopOnLastSlide: false,
     },
+    
 
     pagination: {
-        el: '.slider-pagination',
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        dynamicMainBullets: 2,
       },
     
 
@@ -43,6 +51,10 @@ export const swiper = new Swiper('.swiper', {
     }
 
 })
+}
+
+
+
 
 
 
