@@ -12,13 +12,13 @@ export const burger = () => {
         menu.classList.toggle('active')
     }
 
-    if (isMobile.any()) {
+    if (isMobile.any() || window.innerWidth < 768) {
 
         
 
-        let copyNavMenu = donateBtn.cloneNode(true);
+        let copyHeaderDonateButton = donateBtn.cloneNode(true);
 
-        menu.append(copyNavMenu);
+        menu.append(copyHeaderDonateButton);
 
         donateBtn.remove()
 

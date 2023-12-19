@@ -173,8 +173,8 @@ color: #000000;
 } */
 
 .title {
-  font-size: calc(28px + (36 - 28)*((100vw - 320px)/(1950 - 320)));
-  font-size: 48px;
+  font-size: calc(28px + (48 - 28)*((100vw - 320px)/(1920 - 320)));
+ 
   line-height: 1.2;
   font-weight: 600;
   
@@ -183,8 +183,13 @@ color: #000000;
   text-transform: uppercase;
 }
 
+
+
+
 .text {
   padding: 40px 0;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .text p:not(:last-child) {
   padding-bottom: 15px;

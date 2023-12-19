@@ -4,12 +4,17 @@
 <head>
 	<title>Новый свiт</title>
 	<link rel="shortcut icon" href="dist/img/favicon.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 
 	<link rel="stylesheet" href="dist/css/style.css" />
 	<link rel="stylesheet" href="dist/css/header.css" />
 	<link rel="stylesheet" href="dist/css/main.css" />
 	<link rel="stylesheet" href="dist/css/footer.css" />
+
 	<script src="dist/js/main.js" defer></script>
+
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<meta name="viewport" content="width=device-width">
 </head>
@@ -46,9 +51,188 @@
 
 
 		</header>
-		<main class="main" id="home">
+		<main class="main main__container" id="home">
+			<section class="pet">
 
-			
+				<div class="pet__characteristics">
+					<div class="pet__image-box">
+						<div class="pet__image ">
+							<div class="pet__image-second-bg"></div>
+							<div class="pet__image-inner"></div>
+						</div>
+						<div class="pet__pagination">
+							<div class="pet__pag-buttons  active"></div>
+							<div class="pet__pag-buttons"></div>
+							<div class="pet__pag-buttons"></div>
+							<div class="pet__pag-buttons"></div>
+
+						</div>
+					</div>
+					<div class="pet__text-box">
+						<div id="name" class="pet__title title">ПЕСИК на ім’я <span>ПЕРУН</span></div>
+						<div class="pet__tab">
+
+							<div class="pet__tab-row">
+								<div class="pet__tab-name">Тип:</div>
+								<div id="type" class="pet__tab-text">Собака</div>
+							</div>
+							<div class="pet__tab-row">
+								<div class="pet__tab-name">Порода:</div>
+								<div id="breed" class="pet__tab-text">Собака</div>
+							</div>
+							<div class="pet__tab-row">
+								<div class="pet__tab-name">Вік:</div>
+								<div id="age" class="pet__tab-text">Собака</div>
+							</div>
+							<div class="pet__tab-row">
+								<div class="pet__tab-name">Стать:</div>
+								<div id="sex" class="pet__tab-text">Собака</div>
+							</div>
+							<div class="pet__tab-row">
+								<div class="pet__tab-name">Перебування:</div>
+								<div id="location" class="pet__tab-text">Собака</div>
+							</div>
+							<div class="pet__tab-row">
+								<div class="pet__tab-name">Хвороби:</div>
+								<div id="desises" class="pet__tab-text">Собака</div>
+							</div>
+
+
+
+
+
+
+						</div>
+						<div class="pet__button hover">ЗАБРАТИ ПЕСИКА!</div>
+
+
+					</div>
+
+				</div>
+				<div class="pet__description">
+					<div class="pet__title title">Про песика</div>
+					<div class="pet__text text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+						</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!</p>
+					</div>
+				</div>
+				<div class="pet__reminder">
+					<div class="pet__title title">Як доглядати песика</div>
+					<div class="pet__text text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
+							adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
+							accusantium ex quos quibusdam modi aut quia!</p>
+					</div>
+
+				</div>
+
+
+			</section>
+
+			<section class="slider">
+				<div class="slider__title">Подивись на інших</div>
+				<div class="slider__subtitle">Візьми собі гарного собаку, або ласкавого котика.</div>
+				<div class="swiper">
+
+					<div class="swiper-wrapper slider__wrapper">
+
+						<div class="swiper-slide slider__slide">
+							<div class="slider__card card-slider">
+								<div class="card-slider__image">
+									
+									<div class="card-slider__image-inner"></div>
+								</div>
+								<div class="card-slider__title">ВЕЛИЧНИЙ ЗАГОЛОВОК </div>
+								<div class="card-slider__text">Не менш величний опис до цього величного заголовку</div>
+							</div>
+						</div>
+						<div class="swiper-slide slider__slide">
+							<div class="slider__card card-slider">
+								<div class="card-slider__image"></div>
+								<div class="card-slider__title">ВЕЛИЧНИЙ ЗАГОЛОВОК </div>
+								<div class="card-slider__text">Не менш величний опис до цього величного заголовку</div>
+							</div>
+						</div>
+						<div class="swiper-slide slider__slide">
+							<div class="slider__card card-slider">
+								<div class="card-slider__image"></div>
+								<div class="card-slider__title">ВЕЛИЧНИЙ ЗАГОЛОВОК </div>
+								<div class="card-slider__text">Не менш величний опис до цього величного заголовку</div>
+							</div>
+						</div>
+						<div class="swiper-slide slider__slide">
+							<div class="slider__card card-slider">
+								<div class="card-slider__image">
+									
+									<div class="card-slider__image-inner"></div>
+								</div>
+								<div class="card-slider__title">ВЕЛИЧНИЙ ЗАГОЛОВОК </div>
+								<div class="card-slider__text">Не менш величний опис до цього величного заголовку</div>
+							</div>
+						</div>
+						<div class="swiper-slide slider__slide">
+							<div class="slider__card card-slider">
+								<div class="card-slider__image"></div>
+								<div class="card-slider__title">ВЕЛИЧНИЙ ЗАГОЛОВОК </div>
+								<div class="card-slider__text">Не менш величний опис до цього величного заголовку</div>
+							</div>
+						</div>
+						<div class="swiper-slide slider__slide">
+							<div class="slider__card card-slider">
+								<div class="card-slider__image"></div>
+								<div class="card-slider__title">ВЕЛИЧНИЙ ЗАГОЛОВОК </div>
+								<div class="card-slider__text">Не менш величний опис до цього величного заголовку</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="slider__controls">
+
+						<div class="slider-button-prev"><img src="./dist/img/main/arrow.svg" alt="prev"></div>
+						<div class="swiper-pagination slider__pagination"></div>
+						<div class="slider-button-next"><img src="./dist/img/main/arrow.svg" alt="next"></div>
+					</div>
+
+
+
+
+
+				</div>
+			</section>
+
 
 
 
@@ -58,76 +242,82 @@
 			<div class="footer__image"></div>
 			<div class="footer__body">
 				<div class="footer__container">
-				<div class="footer__content">
-					<div class="footer__column footer__contacts contacts-footer">
-						<div class="footer__title">Контакти</div>
-						<div class="contacts-footer__row">
-							<div class="contacts-footer__logo"><img src="./dist/img/footer/phone.svg" alt=""></div>
-							<div class="contacts-footer__info">
-								<p><a href="#">+380 63 623 00 00</a></p>
-								<p><a href="#">+380 63 623 00 00</a></p>
-								
-								
+					<div class="footer__content">
+						<div class="footer__column footer__contacts contacts-footer">
+							<div class="footer__title">Контакти</div>
+							<div class="contacts-footer__row">
+								<div class="contacts-footer__logo"><img src="./dist/img/footer/phone.svg" alt=""></div>
+								<div class="contacts-footer__info">
+									<p><a href="#">+380 63 623 00 00</a></p>
+									<p><a href="#">+380 63 623 00 00</a></p>
+
+
+								</div>
 							</div>
-						</div>
-						<div class="contacts-footer__row">
-							<div class="contacts-footer__logo"><img src="./dist/img/footer/mail.svg" alt=""></div>
-							<div class="contacts-footer__info">
-								<p><a href="#">info@novysvit.com</a></p>
-								<p><a href="#">support@novysvit.com</a></p>
-								
-								
-								
+							<div class="contacts-footer__row">
+								<div class="contacts-footer__logo"><img src="./dist/img/footer/mail.svg" alt=""></div>
+								<div class="contacts-footer__info">
+									<p><a href="#">info@novysvit.com</a></p>
+									<p><a href="#">support@novysvit.com</a></p>
+
+
+
+								</div>
 							</div>
-						</div>
-						<div class="contacts-footer__row">
-							<div class="contacts-footer__logo"><a href="#"><img src="./dist/img/footer/location.svg" alt=""></a></div>
-							<div class="contacts-footer__info">
-								<p>вул. Олександра Усика 1, </p>
-								<p>Кривий Ріг,  Україна</p>
+							<div class="contacts-footer__row">
+								<div class="contacts-footer__logo"><a href="#"><img src="./dist/img/footer/location.svg"
+											alt=""></a></div>
+								<div class="contacts-footer__info">
+									<p>вул. Олександра Усика 1, </p>
+									<p>Кривий Ріг, Україна</p>
+								</div>
 							</div>
+
 						</div>
 
-					</div>
+						<div class="footer__column footer__buttonss">
+							<div class="footer__logo"><img src="./dist/img/footer/logo.svg" alt=""></div>
 
-					<div class="footer__column footer__buttonss">
-						<div class="footer__logo"><img src="./dist/img/footer/logo.svg" alt=""></div>
+							<div class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+								libero
+								cupiditate ullam labore maiores reiciendis accusamus adipisci! Doloribus, asperiores
+								aspernatur! Earum, dolorem! Amet ea quae quas inventore magni delectus exercitationem!
+							</div>
 
-						<div class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero
-							cupiditate ullam labore maiores reiciendis accusamus adipisci! Doloribus, asperiores
-							aspernatur! Earum, dolorem! Amet ea quae quas inventore magni delectus exercitationem!</div>
+							<div class="footer__donate">Задонатити</div>
 
-						<div class="footer__donate">Задонатити</div>
+							<div class="footer__socials">
+								<a class="footer__social-link" href="#"><img src="./dist/img/footer/telegram.svg"
+										alt=""></a>
+								<a class="footer__social-link" href="#"><img src="./dist/img/footer/instagram.svg"
+										alt=""></a>
+								<a class="footer__social-link" href="#"><img src="./dist/img/footer/tiktok.svg"
+										alt=""></a>
+							</div>
 
-						<div class="footer__socials">
-							<a class="footer__social-link" href="#"><img src="./dist/img/footer/telegram.svg" alt=""></a>
-							<a class="footer__social-link" href="#"><img src="./dist/img/footer/instagram.svg" alt=""></a>
-							<a class="footer__social-link" href="#"><img src="./dist/img/footer/tiktok.svg" alt=""></a>
+
+						</div>
+
+						<div class="footer__column footer__nav">
+							<div class="footer__title">Сторiнки</div>
+							<ul class="footer__nav-list">
+								<li class="footer__link"><a href="./index.html">Головна</a></li>
+								<li class="footer__link"><a href="./pet.html">Новини</a></li>
+								<li class="footer__link"><a href="./get-friend.html">Обрати друга</a></li>
+								<li class="footer__link"><a href="./test.html">Контакти</a></li>
+							</ul>
+
 						</div>
 
 
-					</div>
-
-					<div class="footer__column footer__nav">
-						<div class="footer__title">Сторiнки</div>
-						<ul class="footer__nav-list">
-							<li class="footer__link"><a href="./index.html">Головна</a></li>
-							<li class="footer__link"><a href="./pet.html">Новини</a></li>
-							<li class="footer__link"><a href="./get-friend.html">Обрати друга</a></li>
-							<li class="footer__link"><a href="./test.html">Контакти</a></li>
-						</ul>
 
 					</div>
 
 
 
 				</div>
-
-
-
 			</div>
-			</div>
-			
+
 			<div class="footer__disigned">Зроблено в Lemurs.agency з любовю <span>♥</span></div>
 		</footer>
 	</div>

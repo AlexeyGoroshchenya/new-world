@@ -36,6 +36,10 @@ background-color: white;
     }
 }
 
+.header__logo img{
+    max-width: 100%;
+}
+
 .header__menu {
     height: 100%;
     flex: 1 1 auto;
@@ -43,6 +47,7 @@ background-color: white;
     align-items: center;
     justify-content: flex-end;
     transform: translateX(calc((100vw - var(--container))/2));
+    gap: 20px;
 }
 
 @media (max-width: 1360px) {
@@ -67,12 +72,15 @@ background-color: white;
         padding: 40px;
         background-color: white;
         border: 1px solid #7C58D3;
+
+        overflow: hidden;
+        max-height: 80%;
     }
 
     .header__menu.active {
         opacity: 1;
         visibility: visible;
-        transform: scale(1) translateY(100%);
+        transform: scale(1) translateY(50%);
     }
 
 }
@@ -102,6 +110,8 @@ background-color: white;
         flex-direction: column;
         gap: 40px;
         padding-bottom: 40px;
+        flex-wrap: nowrap;
+        overflow-y: auto;
     }
 }
 

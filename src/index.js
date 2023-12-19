@@ -1,4 +1,5 @@
 import { burger } from './modules/burger';
+import { swiper } from './modules/swiper';
 
 
 
@@ -6,5 +7,6 @@ import { burger } from './modules/burger';
 
 
 burger();
+swiper();
 
 
