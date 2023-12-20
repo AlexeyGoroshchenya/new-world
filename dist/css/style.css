@@ -172,17 +172,23 @@ color: #000000;
   }
 } */
 
+
+
 .title {
   font-size: calc(28px + (48 - 28)*((100vw - 320px)/(1920 - 320)));
- 
   line-height: 1.2;
   font-weight: 600;
-  
-
-  
   text-transform: uppercase;
 }
 
+.medium-title{
+  font-size: calc(24px + (28 - 24)*((100vw - 320px)/(1920 - 320)));
+
+}
+
+.big-title {
+  font-size: calc(32px + (60 - 32)*((100vw - 320px)/(1920 - 320)));
+}
 
 
 
