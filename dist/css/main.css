@@ -745,7 +745,18 @@ background-size: contain;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
+    margin-bottom: 150px;
 }
+
+@media (max-width: 991.98px) {
+
+    .what__button {
+        margin-bottom: 0;
+    
+    }
+}
+
+
 .what__image {
     
     flex: 1 1 50%;
@@ -937,14 +948,9 @@ padding: 20px;
     display: flex;
     gap: 32px;
     justify-content: center;
-
+flex-wrap: wrap;
 }
 
-@media (max-width: 1360px) {
-    .news__body {
-        flex-wrap: wrap;
-    }
-}
 
 @media (max-width: 767.98px) {
     .news__body {

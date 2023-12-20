@@ -1,5 +1,8 @@
+
+
 const pets = [
     {
+        id: 1,
         name: 'Stepan',
         age: '5',
         location: 'Kiew',
@@ -18,7 +21,7 @@ const pets = [
 
     },
     {
-
+        id: 2,
         name: 'Patron',
         age: '4',
         location: 'Kiew',
@@ -34,6 +37,7 @@ const pets = [
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quia repellendus rerum consequatur nesciunt animi, quidem, sequi officiis ab illum consequuntur maiores esse, alias placeat amet voluptate suscipit doloribus ex.',
     },
     {
+        id: 3,
         name: 'Stepan',
         age: '5',
         location: 'Kiew',
@@ -52,7 +56,7 @@ const pets = [
 
     },
     {
-
+        id: 4,
         name: 'Patron',
         age: '4',
         location: 'Kiew',
@@ -68,6 +72,7 @@ const pets = [
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quia repellendus rerum consequatur nesciunt animi, quidem, sequi officiis ab illum consequuntur maiores esse, alias placeat amet voluptate suscipit doloribus ex.',
     },
     {
+        id: 5,
         name: 'Stepan',
         age: '5',
         location: 'Kiew',
@@ -86,7 +91,7 @@ const pets = [
 
     },
     {
-
+        id: 6,
         name: 'Patron',
         age: '4',
         location: 'Kiew',
@@ -102,6 +107,7 @@ const pets = [
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quia repellendus rerum consequatur nesciunt animi, quidem, sequi officiis ab illum consequuntur maiores esse, alias placeat amet voluptate suscipit doloribus ex.',
     },
     {
+        id: 7,
         name: 'Stepan',
         age: '5',
         location: 'Kiew',
@@ -120,7 +126,7 @@ const pets = [
 
     },
     {
-
+        id: 8,
         name: 'Patron',
         age: '4',
         location: 'Kiew',
@@ -136,6 +142,7 @@ const pets = [
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quia repellendus rerum consequatur nesciunt animi, quidem, sequi officiis ab illum consequuntur maiores esse, alias placeat amet voluptate suscipit doloribus ex.',
     },
 ]
+
 const howCatsCare = [
     `Cats: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat hic suscipit
     adipisci odit voluptatum cupiditate illum nisi veniam blanditiis, est libero velit
@@ -350,7 +357,7 @@ export const renderPetsPage = () => {
         })
     }
 
-    let petInd = 0  //в эту переменную передать индекс питомца, который рендерится. а лучше id , но тогда надо немного переделать логику тут
+    let petInd = 0  //в эту переменную передать индекс питомца, который рендерится. или лучше id , но тогда надо немного переделать логику тут
 
     renderPetInformation(petInd)
     renderSlider()
