@@ -268,7 +268,7 @@
 @media (max-width: 480px) {
     .pet__tab-row {
         flex-direction: column;
-        gap: 10px;
+        gap: 0;
         padding-bottom: 25px;
     }
 }
