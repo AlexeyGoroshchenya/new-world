@@ -48,8 +48,14 @@
 
 @media (max-width: 480px) {
     .header__logo{
-    flex: 0 0 250px;
+    flex: auto
     }
+}
+
+@media (max-width: 380px) {
+    .header__logo{
+        flex: auto;
+        }
 }
 
 .header__logo img{
@@ -73,7 +79,7 @@
 
 @media (max-width: 1920px) {
     .logo-text-title{
-        font-size: calc(22px + (36 - 22)*((100vw - 320px)/(1920 - 320)));
+        font-size: calc(21px + (36 - 21)*((100vw - 320px)/(1920 - 320)));
     }
 }
 
@@ -84,7 +90,7 @@
 @media (max-width: 1920px) {
     .logo-text-subtitle {
        
-        font-size: calc(16px + (26 - 16)*((100vw - 320px)/(1920 - 320)));
+        font-size: calc(15px + (26 - 15)*((100vw - 320px)/(1920 - 320)));
     }
 }
 
