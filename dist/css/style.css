@@ -74,6 +74,7 @@ a:visited,
 a:active,
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 a:-webkit-any-link {
@@ -110,7 +111,8 @@ body {
   line-height: 1.2;
 --hover-duration:0.5s;
 --hover: scale(1.05);
-
+--yellow: #FFDA47;
+--violet: #7C58D3;
 }
 
 body::-webkit-scrollbar {
@@ -172,7 +174,6 @@ body::-webkit-scrollbar-thumb {
 
 
 .main:not(#home) {
-
   
   padding-top: 150px;
 }

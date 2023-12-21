@@ -151,7 +151,7 @@
 }
 
 .donation-get__button {
-    background: #7C58D3;
+    background: var(--violet);
     color: #fff;
     border-radius: 10px;
     padding: 20px 20px;

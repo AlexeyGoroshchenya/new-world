@@ -120,7 +120,7 @@
 }
 
 .slider__pagination .swiper-pagination-bullet-active {
-    background-color: #7C58D3;
+    background-color: var(--violet)
 }
 
 

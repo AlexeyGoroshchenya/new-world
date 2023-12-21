@@ -20,7 +20,7 @@ export const header = () => {
 						<li class="menu-header__link"><a href="#">Потреби фонду</a></li>
 						<li class="menu-header__link"><a href="#">Документи</a></li>
 					</ul>
-					<div class="header__donate">Донатити </div>
+					<div class="header__donate hover">Донатити </div>
 				</nav>
 				<div class="header__button"><span></span><span></span><span></span> </div>
 				

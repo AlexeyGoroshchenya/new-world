@@ -212,7 +212,7 @@
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: #7C58D3;
+    background-color: var(--violet);
     transition-duration: var(--hover-duration);
 }
 
@@ -222,7 +222,7 @@
 
 
 .pet__pag-buttons.active {
-    background-color: #FFDA47;
+    background-color: var(--yellow);;
 }
 
 .pet__text-box {
@@ -301,7 +301,7 @@
 
 
 .pet__button {
-    background-color: #FFDA47;
+    background-color: var(--yellow);;
     padding: 15px 40px;
     min-width: 200px;
     text-align: center;

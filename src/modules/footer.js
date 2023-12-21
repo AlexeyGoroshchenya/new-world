@@ -41,12 +41,12 @@ export const footer = () => {
 							cupiditate ullam labore maiores reiciendis accusamus adipisci! Doloribus, asperiores
 							aspernatur! Earum, dolorem! Amet ea quae quas inventore magni delectus exercitationem!</div>
 
-						<div class="footer__donate">Задонатити</div>
+						<div class="footer__donate hover">Задонатити</div>
 
 						<div class="footer__socials">
-							<a class="footer__social-link" href="#"><img src="./dist/img/footer/telegram.svg" alt=""></a>
-							<a class="footer__social-link" href="#"><img src="./dist/img/footer/instagram.svg" alt=""></a>
-							<a class="footer__social-link" href="#"><img src="./dist/img/footer/tiktok.svg" alt=""></a>
+							<a class="footer__social-link hover" href="#"><img src="./dist/img/footer/telegram.svg" alt=""></a>
+							<a class="footer__social-link hover" href="#"><img src="./dist/img/footer/instagram.svg" alt=""></a>
+							<a class="footer__social-link hover" href="#"><img src="./dist/img/footer/tiktok.svg" alt=""></a>
 						</div>
     				</div>
 

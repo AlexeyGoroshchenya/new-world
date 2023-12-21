@@ -32,7 +32,7 @@
   }
 
 .footer__body{
-      border-top: 3px solid #FFDA47;
+      border-top: 3px solid var(--yellow);;
       background-color:  #333333;
     background-image: url('../img/footer/footer-img.png'), url('../img/footer/violet-round.svg') ;
     color: white; 
@@ -200,7 +200,7 @@ padding-bottom: 20px;
 .footer__donate {
     text-align: center;
     padding: 20px 50px;
-    border: 3px solid #7C58D3;
+    border: 3px solid var(--violet);
     border-radius: 30px;
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -210,7 +210,7 @@ padding-bottom: 20px;
 
 .footer__donate:active {
 
-    background-color: #7C58D3;
+    background-color: var(--violet)
 }
 
 
@@ -256,19 +256,21 @@ cursor: pointer;
 }
 .footer__link {
     padding: 10px;
-}
-
-
-@media (max-width: 991.98px) {
-    .footer__link {
-        padding: 25px;
+    
         display: flex;
         align-items: center;
         justify-content: center;
         height: 30px;
         border-radius: 25px;
-        border: 1px solid #FFDA47;
+        
         background-color: #333333;
+}
+
+
+@media (max-width: 991.98px) {
+    .footer__link {
+       padding: 25px; 
+       border: 1px solid var(--yellow);
     }
   }
 
