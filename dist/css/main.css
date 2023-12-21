@@ -149,6 +149,8 @@
 @media (max-width: 767.98px) {
     .get__donation {
         padding: 240px 0;
+        padding-top: 240px;
+        padding-bottom: 35vw;
         background-size: 220% auto;
     }
 }
@@ -555,7 +557,7 @@
 
 @media (max-width: 767.98px) {
     .slider__subtitle {
-        padding-bottom: 70px;
+        padding-bottom: 10vw;
     }
 }
 
@@ -796,88 +798,79 @@
 /* --------------------------------------------------- */
 
 .why {
-    padding-top: 50px;
-    transform: translateY(390px);
-    height: 1000px;
-    background-image: url(../img/main/home/dog.jpg);
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: -300px;
+    padding-top: 150px;
+display: flex;
+margin-bottom: -390px;
 }
 
-@media (max-width: 1460px) {
 
-    .why {
-        background-size: 70%;
-    }
-}
 
 @media (max-width: 991.98px) {
 
     .why {
-        height: 900px;
-        transform: translateY(222px);
-        padding-bottom: 100px;
-        margin-top: -200px;
+        flex-direction: column-reverse;
+        margin-bottom: -250px;
     }
 }
 
 @media (max-width: 767.98px) {
 
     .why {
-        background-size: 80%;
-        overflow: hidden;
-        padding-bottom: 380px;
+        padding-top: 50px; 
     }
 }
 
-@media (max-width: 480px) {
 
-    .why {
-        background-size: 90%;
-        overflow: hidden;
-        padding-bottom: 300px;
-    }
+.why__bg{
+    background-image: url(../img/main/home/dog.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+    flex: 0 0 50vw;
+    align-self: flex-end;
+}
+
+@media (max-width: 991.98px) {
+    .why__bg{
+    width: 100%;
+    background-size: contain;
+}
 }
 
 
 .why__container {
-    display: flex;
-    justify-content: flex-end;
-    height: calc(100% - 400px);
+    margin-left: -150px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
 
     .why__container {
-        height: fit-content;
-        max-height: 100%;
+        margin-left: 0;
 
-        overflow: hidden;
-    }
+}
 }
 
+
 .why__body {
-    width: 50%;
+    
     background-color: #ffffffb2;
     border-radius: 20px;
     padding: 20px;
+    margin-bottom: 250px;
 }
 
 @media (max-width: 991.98px) {
 
     .why__body {
-        width: 100%;
+        margin-bottom: 0;
 
     }
 }
 
 @media (max-width: 767.98px) {
-
     .why__body {
         margin-bottom: 0;
-        border-bottom: 1px solid #7C58D3;
     }
 }
 
@@ -886,24 +879,10 @@
 }
 
 .why__text-box {
-    max-height: 85%;
-    overflow-y: scroll;
     padding-bottom: 50px;
 }
 
-.why__text-box::-webkit-scrollbar {
-    width: 2px;
-}
 
-.why__text-box::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.185);
-    border-radius: 10px;
-}
-
-.why__text-box::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.329);
-}
 
 
 
@@ -913,7 +892,12 @@
     padding-bottom: 20px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
+
+    .why__text-box {
+        
+        padding-bottom: 0;
+    }
 
     .why__text {
         padding: 0;

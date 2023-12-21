@@ -249,15 +249,26 @@ cursor: pointer;
 .footer__nav {
 }
 .footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 .footer__link {
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 
 @media (max-width: 991.98px) {
     .footer__link {
-        padding-bottom: 40px;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        border-radius: 25px;
+        border: 1px solid #FFDA47;
+        background-color: #333333;
     }
   }
 
