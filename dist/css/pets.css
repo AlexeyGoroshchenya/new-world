@@ -1,0 +1,313 @@
+/* стили блока категорий питомцев */
+
+.get__title {
+    text-align: center;
+}
+
+.get__categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+@media (max-width: 767.98px) {
+    .get__categories {
+        flex-direction: column;
+
+    }
+}
+
+.get__item {
+    flex: 1 1 45vw;
+
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    .get__item {
+        flex: auto;
+
+    }
+}
+
+.item-get__image {
+
+    width: calc(var(--container)*0.45);
+    height: calc(var(--container)*0.45);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-20deg);
+}
+
+.item-get__image-1 {
+    background: url('../img/main/violet-round.svg') center/ cover no-repeat;
+}
+
+.item-get__image-2 {
+    background: url('../img/main/orange-round.svg') center/ cover no-repeat;
+}
+
+.item-get__dog {
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(20deg);
+    height: 90%;
+    width: 90%;
+    background: url('../img/main/get/dog.jpg') center/ cover no-repeat;
+    cursor: pointer;
+}
+
+.item-get__cat {
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(20deg);
+    height: 90%;
+    width: 90%;
+    background: url('../img/main/get/cat.jpg') center/ cover no-repeat;
+    cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+    .item-get__image {
+        width: 45vw;
+        height: 45vw
+    }
+}
+
+@media (max-width: 767.98px) {
+    .item-get__image {
+        width: 80vw;
+        height: 80vw
+    }
+}
+
+.item-get__name {
+    padding: 70px 0;
+    cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+    .item-get__name {
+        padding: 20px 0;
+    }
+}
+
+
+
+/* стили блока описания питомца */
+
+.pet {
+    padding-bottom: 250px;
+}
+
+
+@media (max-width: 767.98px) {
+    .pet {
+        padding-bottom: 70px;
+    }
+}
+
+.pet__characteristics {
+    display: flex;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+    .pet__characteristics {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.pet__image-box {
+    margin-right: 130px;
+    flex: 0 0 50%;
+}
+
+@media (max-width: 767.98px) {
+    .pet__image-box {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.pet__image {
+
+    width: calc(var(--container)*0.45);
+    height: calc(var(--container)*0.45);
+    border-radius: 50%;
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-20deg);
+    position: relative;
+    background: url('../img/main/violet-round.svg') center/ cover no-repeat;
+    margin-bottom: 50px;
+    transition-duration: var(--hover-duration);
+}
+
+.pet__image.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 1150px) {
+    .pet__image {
+
+        width: 45vw;
+        height: 45vw;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pet__image {
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+.pet__image-second-bg {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/main/orange-round.svg) center/ cover no-repeat;
+    transform: rotate(42deg);
+}
+
+.pet__image-inner {
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(20deg);
+    height: 90%;
+    width: 90%;
+    background: url('../img/main/get/cat.jpg') center/ cover no-repeat;
+    cursor: pointer;
+}
+
+.pet__pagination {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-10px);
+}
+
+.pet__pag-buttons {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #7C58D3;
+    transition-duration: var(--hover-duration);
+}
+
+.pet__pag-buttons:hover {
+    transform: scale(1.3);
+}
+
+
+.pet__pag-buttons.active {
+    background-color: #FFDA47;
+}
+
+.pet__text-box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+    .pet__text-box {
+        width: 80vw;
+
+    }
+}
+
+
+.pet__title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+.pet__tab {
+    padding-top: 60px;
+    flex: 1 1 auto;
+    padding-bottom: 40px;
+}
+
+
+.pet__tab-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+
+@media (max-width: 480px) {
+    .pet__tab-row {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 25px;
+    }
+}
+
+
+.pet__tab-name {
+    flex: 0 0 50%;
+
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .pet__tab-name {
+        align-self: flex-start;
+        flex: auto;
+    }
+}
+
+.pet__tab-text {
+    flex: 0 0 50%;
+}
+
+@media (max-width: 480px) {
+    .pet__tab-text {
+        align-self: flex-end;
+        flex: auto;
+    }
+}
+
+
+
+.pet__button {
+    background-color: #FFDA47;
+    padding: 15px 40px;
+    min-width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 28px;
+}
+
+

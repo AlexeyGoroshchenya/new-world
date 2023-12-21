@@ -245,7 +245,7 @@ export const renderPetsPage = () => {
                                     <div id="desises" class="pet__tab-text">${pet.desise}</div>
                                 </div>
                             </div>
-                            <div class="pet__button hover">ЗАБРАТИ ПЕСИКА!</div>
+                            <div class="pet__button hover">ЗАБРАТИ ${pet.typeName}a!</div>
         `
         document.querySelector('.pet__wrapper').innerHTML = ''
 

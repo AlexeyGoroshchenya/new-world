@@ -164,18 +164,18 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-/* @media (max-width: 1023.98px) {
-  [class *="__container"] {
-    --container: 900px;
-  }
+.main {
+
+  flex: 1 1 auto;
+  padding-top: 100px;
 }
 
-@media (max-width: 767.98px) {
-  [class *="__container"] {
-    max-width: none;
-  }
-} */
 
+.main:not(#home) {
+
+  
+  padding-top: 150px;
+}
 
 
 .title {

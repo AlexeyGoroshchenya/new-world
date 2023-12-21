@@ -12,20 +12,20 @@ export const burger = () => {
         menu.classList.toggle('active')
     }
 
-    if (isMobile.any() || window.innerWidth < 768) {
+    // if (isMobile.any() || window.innerWidth < 768) {
 
         
 
-        let copyHeaderDonateButton = donateBtn.cloneNode(true);
+    //     let copyHeaderDonateButton = donateBtn.cloneNode(true);
 
-        menu.append(copyHeaderDonateButton);
+    //     menu.append(copyHeaderDonateButton);
 
-        donateBtn.remove()
-
-
+    //     donateBtn.remove()
 
 
-    }
+
+
+    // }
 
 
     document.body.addEventListener('click', (e) => {
